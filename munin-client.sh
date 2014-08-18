@@ -14,8 +14,7 @@ filemunin=/etc/munin/munin-node.conf
 test -f $filemunin.orig || cp $filemunin $filemunin.orig
 # rm $filemunin
 # touch $filemunin
-sed -i 's/allow ^127.*/allow ^172.\\16.\\69.\\15$/g' /etc/munin/munin-node.conf
- 
+sed -i 's/allow ^172.*/allow ^172\\.16\\.69\\.29$/g' /etc/munin/munin-node.conf
 echo "Khoi dong lai munin"
 sleep 5
 sudo restart munin-node
