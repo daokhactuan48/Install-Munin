@@ -5,11 +5,11 @@ apt-get update
 
 echo "--Cai dat apache-----------------------------------------"
 
-apt-get install apache2
+apt-get install apache2 -y
 
 echo "--Cai dat Munin Master-----------------------------------"
 
-apt-get install munin
+apt-get install munin -y
 
 echo "---------------------------------------------------------"
 
